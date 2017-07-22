@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Projects_github/ForgotCppLearning/chapter1.cpp">
+			<Option target="ForgotCppLearning"/>
+		</Unit>
+		<Unit filename="D:/Projects_github/ForgotCppLearning/chapter1.h">
+			<Option target="ForgotCppLearning"/>
+		</Unit>
 		<Unit filename="D:/Projects_github/ForgotCppLearning/main.cpp">
 			<Option target="ForgotCppLearning"/>
 		</Unit>

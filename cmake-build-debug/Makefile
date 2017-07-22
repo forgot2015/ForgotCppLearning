@@ -122,6 +122,33 @@ ForgotCppLearning/fast:
 	$(MAKE) -f CMakeFiles\ForgotCppLearning.dir\build.make CMakeFiles/ForgotCppLearning.dir/build
 .PHONY : ForgotCppLearning/fast
 
+chapter1.obj: chapter1.cpp.obj
+
+.PHONY : chapter1.obj
+
+# target to build an object file
+chapter1.cpp.obj:
+	$(MAKE) -f CMakeFiles\ForgotCppLearning.dir\build.make CMakeFiles/ForgotCppLearning.dir/chapter1.cpp.obj
+.PHONY : chapter1.cpp.obj
+
+chapter1.i: chapter1.cpp.i
+
+.PHONY : chapter1.i
+
+# target to preprocess a source file
+chapter1.cpp.i:
+	$(MAKE) -f CMakeFiles\ForgotCppLearning.dir\build.make CMakeFiles/ForgotCppLearning.dir/chapter1.cpp.i
+.PHONY : chapter1.cpp.i
+
+chapter1.s: chapter1.cpp.s
+
+.PHONY : chapter1.s
+
+# target to generate assembly for a file
+chapter1.cpp.s:
+	$(MAKE) -f CMakeFiles\ForgotCppLearning.dir\build.make CMakeFiles/ForgotCppLearning.dir/chapter1.cpp.s
+.PHONY : chapter1.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... ForgotCppLearning
 	@echo ... edit_cache
+	@echo ... chapter1.obj
+	@echo ... chapter1.i
+	@echo ... chapter1.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
