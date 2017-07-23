@@ -1,42 +1,17 @@
-#include <iostream>
-#include <cstdio>
-#include <algorithm>
-using namespace std;
-int getTwo();
-
-void print(char c);
-
-void printTest(char c);
-
-
+//1.1
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
 //int main() {
-//    std::cout << "Hello, World!" << std::endl;
-//    int a=7;
-//    printf("I have %d yuan. \n",a);
-//    printf("I want to buy:\na book.");
+//    int a, b, c;
+//    scanf ("%d %d %d", &a, &b, &c);
+//    printf ("%d\n", b);
 //    return 0;
 //}
-//int main() {
-////    printf(getTwo()+"");
-////    getTwo();
-//    string string1;
-////    cout<<"please input three number ";
-////    cin>>string1;
-////    cout<<string1;
-//    string sentence = "And I feel fine...";
-//    istringstream iss(sentence);
-//    copy(istream_iterator<string>(iss),
-//         istream_iterator<string>(),
-//         ostream_iterator<string>(cout, "\n"));
-////    cout<<getTwo();
-////    cout<<max(1,3);
-////    max(1,2);
-//}
-//int getTwo(){
-//
-//    return 1;
-//}
-
+//1.2
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
 //void myPrint(string s1) {
 //    cout << "  " + s1 << endl;
 //    cout << " " + s1 + s1 + s1 << endl;
@@ -44,93 +19,151 @@ void printTest(char c);
 //    cout << " " + s1 + s1 + s1 << endl;
 //    cout << "  " + s1 << endl;
 //}
-
-int main() {
-//    cout << "Hello World";
-//    cout << "Size of char : " << sizeof(char) << endl;
-//    cout << "Size of int : " << sizeof(int) << endl;
-//    cout << "Size of short int : " << sizeof(short int) << endl;
-//    cout << "Size of long int : " << sizeof(long int) << endl;
-//    cout << "Size of float : " << sizeof(float) << endl;
-//    cout << "Size of double : " << sizeof(double) << endl;
-//    cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
-//    //return之后的不会再执行
-////    return 0;
-//    // 局部变量声明
-//    int a, b;
-//    int c;
-//
-//    // 实际初始化
-//    a = 10;
-//    b = 20;
-//    c = a + b;
-//
-//    cout << c;
-
-//    char ch = 'c';
-////    cout<<ch;
-//    printf("  %s",ch);
-
-    //题目1
-//    string string1;
-//    getline(cin,string1);
-//cout<<string1<<endl;
-
-//    int a, b, c;
-//    cin >> a >> b >> c;
-//    cout << b << endl;
-
-
-//    int a, b, c;//定义三个变量
-//    scanf ("%d %d %d", &a, &b, &c);//输入三个整数
-//    printf ("%d\n", b);//输出中间一个
-
-    //题目2
-//    string s1;
+//int main() {string s1;
 //    getline(cin, s1);
 //    myPrint(s1);
+//    return 0;
+//}
 
-    //题目3
-//    char ch;
+//1.3
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//int main() {    char ch;
 //    int i;
 //    cin >> ch;
 //    i = ch;
 //    cout << i;
-
-    //题目4
+//    return 0;
+//}
+//1.4
+//#include <iostream>
+//using namespace std;
+//int main() {
 //    int i;
 //    char ch;
 //    cin>>i;
 //    ch=(char)i;
 //    cout<<ch;
+//    return 0;
+//}
 
-    //题目5
+//1.5
+//#include <iostream>
+//using namespace std;
+//int main() {
 //    int i;
 //    short sh;
 //    cout << sizeof(i) <<" "<<sizeof(sh)<< endl;
+//    return 0;
+//}
 
-    //题目6
+//1.6
+//#include <iostream>
+//using namespace std;
+//int main() {
 //    float f;
 //    double d;
 //    cout << sizeof(f) <<" "<<sizeof(d)<< endl;
-//   int a;
-    unsigned short a;
-    short b;
-    a = 32768; b = a; printf("%d %d\n", a, b);
-    chapter1.sample1();
+//    return 0;
+//}
+
+
+//2.1
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main() {
+//    int a, b, c;
+//    scanf ("%d %d %d", &a, &b, &c);
+//    printf ("%8d %8d %8d",a,b,c);
+//    return 0;
+//}
+
+//2.2
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main() {
+//    double f;
+//    scanf ("%lf", &f);
+//    printf ("%.12lf",f);
+//    return 0;
+//}
+
+//2.3
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main(){
+//    char c;
+//    int i;
+//    float f;
+//    double lf;
+//    scanf("%c\n%d\n%f\n%lf",&c,&i,&f,&lf);
+//    printf("%c %i %.6f %.6lf",c,i,f,lf);
+//    return 0;
+//}
+
+
+//2.4
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main(){
+//    double lf;
+//    scanf("%lf",&lf);
+//    double v = (double)4/3*3.14*lf*lf*lf;
+//    printf("%.2lf",v);
+//    return 0;
+//}
+
+
+//2.5
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main() {
+//    int h, r;
+//    double Pi = 3.14159;
+//    scanf("%d %d", &h, &r);
+//    double v = Pi * r * r * h;
+//    int i =(int)(20*1000/v)+1;
+//    printf("%d",i);
+//    return 0;
+//}
+
+//exam
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//int main(){
+////    cout<<6 * 4 / 5 + (7 % 2)<<endl;
+////    int a = 0,b = 10, c;
+////    c = a++;
+////    c = ++b;
+////    cout << a << "," << b << "," << c << endl;
+////    char d = 'a' + 4;
+////    cout << d << "," << (int) d + 3 << endl;
+//    unsigned int x = 0xffffffff;
+//
+//    unsigned int b = x + 2;
+//
+//    int y = x;
+//
+//    printf("%x,%d,%x,%d",y,y,b,b);
+//    return 0;
+//}
+
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+int main() {
+    int c;
+    while ((c = cin.get()) != EOF) {
+        cout << (char) c;
+    }
     return 0;
 }
-
-
-/* 函数返回两个数中较大的那个数 */
-//int max(int num1, int num2) {
-//    /* 局部变量声明 */
-//    int result;
-//
-//    if (num1 > num2)
-//        result = num1;
-//    else
-//        result = num2;
-//
-//    return result;
-//}

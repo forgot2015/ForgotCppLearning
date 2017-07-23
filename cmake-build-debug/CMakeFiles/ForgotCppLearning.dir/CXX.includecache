@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
+D:/Projects_github/ForgotCppLearning/chapter1.cpp
+cstdio
+-
+chapter1.h
+D:/Projects_github/ForgotCppLearning/chapter1.h
+
+D:/Projects_github/ForgotCppLearning/chapter1.h
+
 D:/Projects_github/ForgotCppLearning/main.cpp
 iostream
 -
 cstdio
 -
-algorithm
--
-
-D:/Projects_github/ForgotCppLearning/sample2.cpp
-sample2.h
-D:/Projects_github/ForgotCppLearning/sample2.h
-
-D:/Projects_github/ForgotCppLearning/sample2.h
 
