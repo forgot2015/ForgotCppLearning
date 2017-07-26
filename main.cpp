@@ -157,13 +157,147 @@
 //}
 
 
+//输出所有输入的字符
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main() {
+//    int c;
+//    while ((c = cin.get()) != EOF) {
+//        cout << (char) c;
+//    }
+//    return 0;
+//}
+
+//#include <iostream>
+//#include <cstdio>
+//using namespace std;
+//int main() {
+//    int i =20/-3;
+//   cout<<i<<endl;
+//    return 0;
+//}
+//3.1
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int i;
+//    cin >> i;
+//    if (i % 2 == 0) {
+//        cout << "even";
+//    } else {
+//        cout << "odd";
+//    }
+//    return 0;
+//}
+//3.2
+//#include <iostream>
+//#include <cstdio>
+//#include <cmath>
+//
+//using namespace std;
+//
+//int main() {
+//    double a, b, c, x1, x2;
+//    scanf("%lf %lf %lf", &a, &b, &c);
+//    if (a == 0) {
+//        return 0;
+//    }
+//    x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+//    x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+//    double d = b * b - 4 * a * c;
+//    if (d == 0) {
+//        printf("x1=x2=%.5lf", x1);
+//    } else if (d > 0) {
+//        printf("x1=%.5lf;x2=%.5lf", x1, x2);
+//    } else {
+//        double aa = -b / (2 * a);
+//        if (aa == 0) { aa = 0.0; }
+//        printf("x1=%.5lf+%.5lfi;x2=%.5lf-%.5lfi", aa, sqrt(4 * a * c - b * b) / (2 * a), aa,
+//               sqrt(4 * a * c - b * b) / (2 * a));
+//    }
+//    return 0;
+//}
+
+//3.3
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int x,y;
+//    cin >> x>>y;
+//    if(x>=-1&&x<=1&&y>=-1&&y<=1){
+//        cout<<"yes";
+//    }else{
+//        cout<<"no";
+//    }
+//    return 0;
+//}
+
+//3.4
+/*
+ * 你买了一箱n个苹果，很不幸的是买完时箱子里混进了一条虫子。虫子每x小时能吃掉一个苹果，假设虫子在吃完一个苹果之前不会吃另一个，那么经过y小时你还有多少个完整的苹果？*/
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int n,x,y;
+//    int l;
+//    cin >>n>> x>>y;
+//    l= (int) (n - (double)y / x);
+//    if(l<=0){ //要考虑吃完为0的情况
+//        l=0;
+//    }
+//    cout<<l;
+//    return 0;
+//}
+
+//3.5
+/*一个最简单的计算器，支持+, -, *, / 四种运算。仅需考虑输入输出为整数的情况，数据和运算结果不会超过int表示的范围。*/
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int x,y;
+//    char c;
+//    cin >>x>> y>>c;
+//    if(c=='+'){
+//        cout<<x+y;
+//    }
+//    else if(c=='-'){
+//        cout<<x-y;
+//    }
+//    else if(c=='*'){
+//        cout<<x*y;
+//    }
+//    else if(c=='/'){
+//        if(y==0){
+//            cout<<"Divided by zero!";
+//        }else{
+//            cout<<x/y;
+//        }
+//    } else{
+//        cout<<"Invalid operator!";
+//    }
+//    return 0;
+//}
+
+//3.6
+/*描述
+读入n（1 <= n <= 10000）个整数，求它们的和与均值。
+*/
+
 #include <iostream>
 #include <cstdio>
+
 using namespace std;
+
 int main() {
-    int c;
-    while ((c = cin.get()) != EOF) {
-        cout << (char) c;
+    int n;
+    int in;
+    int max = 0;
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &in);
+        max += in;
     }
+    printf("%d %.5lf", max, (double) max / n);
     return 0;
 }
