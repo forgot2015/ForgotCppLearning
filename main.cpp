@@ -284,20 +284,122 @@
 读入n（1 <= n <= 10000）个整数，求它们的和与均值。
 */
 
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//    int n;
+//    int in;
+//    int max = 0;
+//    scanf("%d", &n);
+//    for (int i = 0; i < n; i++) {
+//        scanf("%d", &in);
+//        max += in;
+//    }
+//    printf("%d %.5lf", max, (double) max / n);
+//    return 0;
+//}
+
+//3.7
+/*给定一个长度为n的非负整数序列，请计算序列的最大跨度值（最大跨度值 = 最大值减去最小值）。*/
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int n;
+//    int in;
+//    int min;
+//    int max;
+//    cin>>n;
+//    for (int i = 0; i < n; i++) {
+//        cin>>in;
+//        if (i==0){
+//            max=in;
+//            min=in;
+//        }
+//        if(in>max){
+//            max=in;
+//        }
+//        if(in<min){
+//            min=in;
+//        }
+//    }
+//    cout<<max-min;
+//    return 0;
+//}
+
+//3.8
+/*2008年北京奥运会，A国的运动员参与了n天的决赛项目(1≤n≤17)。现在要统计一下A国所获得的金、银、铜牌数目及总奖牌数。
+ * 样例输入
+3
+1 0 3
+3 1 0
+0 3 0
+样例输出
+4 4 3 11*/
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int n;
+//    int a,b,c;
+//    int asum=0,bsum=0,csum=0;
+//    cin>>n;
+//    for (int i = 0; i <n ; ++i) {
+//        cin>>a>>b>>c;
+//        asum+=a;
+//        bsum+=b;
+//        csum+=c;
+//    }
+//    cout<<asum<<" "<<bsum<<" "<<csum<<" "<<asum+bsum+csum;
+//    return 0;
+//}
+
+//3.9
+/*给出一个整数a和一个正整数n，求乘方a^n。*/
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int a, n;
+//    cin >> a >> n;
+//    int square = a;
+//    for (int i = 0; i < n - 1; i++) {
+//        square *= a;
+//    }
+//    cout << square;
+//    return 0;
+//}
+
+//3.10
+/*鸡尾酒疗法，原指“高效抗逆转录病毒治疗”（HAART），由美籍华裔科学家何大一于1996年提出，是通过三种或三种以上的抗病毒药物联合使用来治疗艾 滋病。该疗法的应用可以减少单一用药产生的抗药性，最大限度地抑制病毒的复制，使被破坏的机体免疫功能部分甚至全部恢复，从而延缓病程进展，延长患者生 命，提高生活质量。人们在鸡尾酒疗法的基础上又提出了很多种改进的疗法。为了验证这些治疗方法是否在疗效上比鸡尾酒疗法更好，可用通过临床对照实验的方式 进行。假设鸡尾酒疗法的有效率为x，新疗法的有效率为y，如果y-x大于5%，则效果更好，如果x-y大于5%，则效果更差，否则称为效果差不多。下面给 出n组临床对照实验，其中第一组采用鸡尾酒疗法，其他n-1组为各种不同的改进疗法。请写程序判定各种改进疗法效果如何。*/
 #include <iostream>
-#include <cstdio>
-
 using namespace std;
-
 int main() {
     int n;
-    int in;
-    int max = 0;
-    scanf("%d", &n);
+    int a,b;
+    double ab;
+    int x,y;
+    double xy;
+    cin >> n;
+    string str[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &in);
-        max += in;
+        if(i==0){
+            cin>>a>>b;
+            ab=(double)b/a;
+        } else{
+            cin>>x>>y;
+            xy=(double)y/x;
+            if((xy-ab)>0.05){
+                str[i]="better";
+            }else if((ab-xy)>0.05){
+                str[i]="worse";
+            }else{
+                str[i]="same";
+            }
+        }
     }
-    printf("%d %.5lf", max, (double) max / n);
+    for (int j = 1; j <n ; ++j) {
+        cout<<str[j]<<endl;
+    }
     return 0;
 }
