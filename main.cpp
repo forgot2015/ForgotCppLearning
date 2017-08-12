@@ -538,31 +538,31 @@ int main() {
 //}
 
 
-#include <iostream>
-#include <cstdio>
-
-using namespace std;
-
-int main() {
-
-    int M, N, X;
-    scanf("%d %d %d", &M, &N, &X);
-    while (M / N > 0) {
-        int y = 0;
-        if (M % N != 0) {
-            y = M / N + 1;
-        } else {
-            y = M / N;
-        }
-        if (y > X) {
-            break;
-        }
-        X = X - y;
-        N = M / N + N;
-    }
-    printf("%d", N);
-    return 0;
-}
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//
+//    int M, N, X;
+//    scanf("%d %d %d", &M, &N, &X);
+//    while (M / N > 0) {
+//        int y = 0;
+//        if (M % N != 0) {
+//            y = M / N + 1;
+//        } else {
+//            y = M / N;
+//        }
+//        if (y > X) {
+//            break;
+//        }
+//        X = X - y;
+//        N = M / N + N;
+//    }
+//    printf("%d", N);
+//    return 0;
+//}
 
 //4.6 数字统计
 /*请统计某个给定范围[L, R]的所有整数中，数字2出现的次数。
@@ -587,5 +587,274 @@ int main() {
 //        }
 //    }
 //    cout<<count;
+//    return 0;
+//}
+
+
+//5.1 输出一个整数序列中与指定数字相同的数的个数。
+
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//
+//    int N, a, m, count=0;
+//    cin >> N;
+//    int ints[N];
+//    for (int i = 0; i < N; ++i) {
+//        cin >> a;
+//        ints[i] = a;
+//    }
+//    cin>>m;
+//    for(int i = 0; i < N; ++i){
+//        if (ints[i]==m){
+//            count++;
+//        }
+//    }
+//    cout<<count;
+//    return 0;
+//}
+
+//5.2
+/*陶陶家的院子里有一棵苹果树，每到秋天树上就会结出10个苹果。苹果成熟的时候，陶陶就会跑去摘苹果。陶陶有个30厘米高的板凳，当她不能直接用手摘到苹果的时候，就会踩到板凳上再试试。
+
+现在已知10个苹果到地面的高度，以及陶陶把手伸直的时候能够达到的最大高度，请帮陶陶算一下她能够摘到的苹果的数目。假设她碰到苹果，苹果就会掉下来。*/
+
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//
+//    int H, h,count=0;
+//    int hei[10];
+//    for (int i = 0; i <10 ; ++i) {
+//        cin>>H;
+//        hei[i]=H;
+//    }
+//    cin>>h;
+//    for (int i = 0; i <10 ; ++i) {
+//       if( h+30>=hei[i]){
+//            count++;
+//        }
+//    }
+//    cout<<count;
+//    return 0;
+//}
+
+//5.3
+/*某医院想统计一下某项疾病的获得与否与年龄是否有关，需要对以前的诊断记录进行整理，按照0-18、19-35、36-60、61以上（含61）四个年龄段统计的患病人数占总患病人数的比例。*/
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//    int n, age, age0 = 0, age19 = 0, age36 = 0, age61 = 0;
+//    cin >> n;
+//    for (int i = 0; i < n; ++i) {
+//        cin >> age;
+//        if (0 <= age && age <= 18) {
+//            age0++;
+//        } else if (19 <= age && age <= 35) {
+//            age19++;
+//        } else if (36 <= age && age <= 60) {
+//            age36++;
+//        } else if (61 <= age) {
+//            age61++;
+//        }
+//    }
+//    printf("%.2lf%%\n", (double) age0*100 / n);
+//    printf("%.2lf%%\n", ((double) age19*100 / n));
+//    printf("%.2lf%%\n", ((double) age36*100 / n));
+//    printf("%.2lf%%\n", ((double) age61*100 / n));
+//    return 0;
+//}
+
+
+//5.4
+/*某校大门外长度为L的马路上有一排树，每两棵相邻的树之间的间隔都是1米。我们可以把马路看成一个数轴，马路的一端在数轴0的位置，另一端在L的位置；数轴上的每个整数点，即0，1，2，……，L，都种有一棵树。
+
+由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是计算将这些树都移走后，马路上还有多少棵树。*/
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//    int tree[10000];
+//    int L, M;
+//    int start, end;
+//    int count = 0;
+//    cin >> L >> M;
+//    for (int j = 0; j <= L; ++j) {
+//        tree[j] = 1;
+//    }
+//    for (int i = 0; i < M; ++i) {
+//        cin >> start >> end;
+//        for (int j = start; j <= end; ++j) {
+//            tree[j] = 0;
+//        }
+//    }
+//    for (int k = 0; k <= L; ++k) {
+//        if (tree[k] == 1) {
+//            count++;
+//        }
+//    }
+//    cout << count;
+//    return 0;
+//}
+
+//5.5
+/*给定一个5*5的矩阵，每行只有一个最大值，每列只有一个最小值，寻找这个矩阵的鞍点。
+鞍点指的是矩阵中的一个元素，它是所在行的最大值，并且是所在列的最小值。
+例如：在下面的例子中（第4行第1列的元素就是鞍点，值为8 ）。
+11 3 5 6 9
+12 4 7 8 10
+10 5 6 9 11
+8 6 4 7 2
+15 10 11 20 25*/
+
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//    int a, b, c, d, e, wMax[5], hMin[5];
+//    int s[5][5];
+//    for (int i = 0; i < 5; ++i) {
+//        cin >> a >> b >> c >> d >> e;
+//        s[i][0] = a;
+//        s[i][1] = b;
+//        s[i][2] = c;
+//        s[i][3] = d;
+//        s[i][4] = e;
+//    }
+//    for (int j = 0; j < 5; ++j) {
+//        wMax[j] = s[j][0];
+//        for (int i = 0; i < 5; ++i) {
+//            if (s[j][i] > wMax[j]) {
+//                wMax[j] = s[j][i];
+//            }
+//        }
+//    }
+//    for (int k = 0; k < 5; ++k) {
+//        hMin[k] = s[0][k];
+//        for (int i = 0; i < 5; ++i) {
+//            if (s[i][k] < hMin[k]) {
+//                hMin[k] = s[i][k];
+//            }
+//        }
+//    }
+//    for (int l = 0; l < 5; ++l) {
+//        for (int i = 0; i < 5; ++i) {
+//            if (s[l][i] == wMax[l] && s[l][i] == hMin[i]) {
+//                cout << l + 1 << " " << i + 1 << " " << s[l][i];
+//                return 0;
+//            }
+//        }
+//    }
+//    cout<<"not found";
+//    return 0;
+//}
+
+
+//5.6
+/*
+ * 给定n行m列的图像各像素点的灰度值，要求用如下方法对其进行模糊化处理：
+
+1. 四周最外侧的像素点灰度值不变；
+
+2. 中间各像素点新灰度值为该像素点及其上下左右相邻四个像素点原灰度值的平均（舍入到最接近的整数）。*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,m,a;
+    cin>>n>>m;
+    double in[101][101];
+    double im[101][101];
+    for (int i = 0; i <n ; ++i) {
+        for (int j = 0; j <m ; ++j) {
+            cin>>in[i][j];
+            im[i][j]=in[i][j];
+        }
+    }
+    for (int i = 1; i <n-1 ; ++i) {
+        for (int j = 1; j <m-1 ; ++j) {
+            im[i][j]=int((in[i-1][j]+in[i][j]+in[i+1][j]+in[i][j-1]+in[i][j+1])/5+0.5);
+        }
+    }
+    for (int i = 0; i <n ; ++i) {
+        for (int j = 0; j <m ; ++j) {
+           cout<<im[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+//#include<stdio.h>
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//    int m,n,i,j=0;
+//    double sum=0;
+//    double a[105][105];
+//    double b[105][105];
+//    cin>>m>>n;
+//    for(i=1;i<=m;i++){
+//        for(j=1;j<=n;j++){
+//            cin>>a[i][j];
+//            b[i][j]=a[i][j];
+//        }
+//    }
+//    for(i=1;i<=m;i++){
+//        for(j=1;j<=n;j++){
+//            if(i!=1 && j!=1 && i!=m && j!=n){
+//                sum=(a[i][j]+a[i-1][j]+a[i+1][j]+a[i][j+1]+a[i][j-1])/5;
+//                sum=int(sum+0.5);
+//                b[i][j]=sum;
+//            }
+//        }
+//    }
+//    for(i=1;i<=m;i++){
+//        for(j=1;j<=n;j++){
+//            cout<<b[i][j]<<" ";
+//            if(j==n){
+//                printf("\n");
+//            }
+//        }
+//    }
+//    return 0;
+//}
+
+//5.7
+/*输入一个n行m列的矩阵A，输出它的转置AT。*/
+//#include <iostream>
+//#include <cstdio>
+//
+//using namespace std;
+//
+//int main() {
+//    int n,m,a;
+//    cin>>n>>m;
+//    int in[101][101];
+//    for (int i = 0; i <n ; ++i) {
+//        for (int j = 0; j <m ; ++j) {
+//            cin>>in[i][j];
+//        }
+//    }
+//    for (int i = 0; i <m ; ++i) {
+//        for (int j = 0; j <n ; ++j) {
+//           cout<<in[j][i]<<" ";
+//        }
+//        cout<<endl;
+//    }
 //    return 0;
 //}
