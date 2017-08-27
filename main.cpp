@@ -770,69 +770,34 @@ int main() {
 1. 四周最外侧的像素点灰度值不变；
 
 2. 中间各像素点新灰度值为该像素点及其上下左右相邻四个像素点原灰度值的平均（舍入到最接近的整数）。*/
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n,m,a;
-    cin>>n>>m;
-    double in[101][101];
-    double im[101][101];
-    for (int i = 0; i <n ; ++i) {
-        for (int j = 0; j <m ; ++j) {
-            cin>>in[i][j];
-            im[i][j]=in[i][j];
-        }
-    }
-    for (int i = 1; i <n-1 ; ++i) {
-        for (int j = 1; j <m-1 ; ++j) {
-            im[i][j]=int((in[i-1][j]+in[i][j]+in[i+1][j]+in[i][j-1]+in[i][j+1])/5+0.5);
-        }
-    }
-    for (int i = 0; i <n ; ++i) {
-        for (int j = 0; j <m ; ++j) {
-           cout<<im[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-    return 0;
-}
-
-//#include<stdio.h>
-//#include<iostream>
+//#include <iostream>
 //using namespace std;
-//int main()
-//{
-//    int m,n,i,j=0;
-//    double sum=0;
-//    double a[105][105];
-//    double b[105][105];
-//    cin>>m>>n;
-//    for(i=1;i<=m;i++){
-//        for(j=1;j<=n;j++){
-//            cin>>a[i][j];
-//            b[i][j]=a[i][j];
+//
+//int main() {
+//    int n,m,a;
+//    cin>>n>>m;
+//    double in[101][101];
+//    double im[101][101];
+//    for (int i = 0; i <n ; ++i) {
+//        for (int j = 0; j <m ; ++j) {
+//            cin>>in[i][j];
+//            im[i][j]=in[i][j];
 //        }
 //    }
-//    for(i=1;i<=m;i++){
-//        for(j=1;j<=n;j++){
-//            if(i!=1 && j!=1 && i!=m && j!=n){
-//                sum=(a[i][j]+a[i-1][j]+a[i+1][j]+a[i][j+1]+a[i][j-1])/5;
-//                sum=int(sum+0.5);
-//                b[i][j]=sum;
-//            }
+//    for (int i = 1; i <n-1 ; ++i) {
+//        for (int j = 1; j <m-1 ; ++j) {
+//            im[i][j]=int((in[i-1][j]+in[i][j]+in[i+1][j]+in[i][j-1]+in[i][j+1])/5+0.5);
 //        }
 //    }
-//    for(i=1;i<=m;i++){
-//        for(j=1;j<=n;j++){
-//            cout<<b[i][j]<<" ";
-//            if(j==n){
-//                printf("\n");
-//            }
+//    for (int i = 0; i <n ; ++i) {
+//        for (int j = 0; j <m ; ++j) {
+//           cout<<im[i][j]<<" ";
 //        }
+//        cout<<endl;
 //    }
 //    return 0;
 //}
+
 
 //5.7
 /*输入一个n行m列的矩阵A，输出它的转置AT。*/
@@ -858,3 +823,123 @@ int main() {
 //    }
 //    return 0;
 //}
+
+
+//6.1
+/*Pell数列a1, a2, a3, ...的定义是这样的，a1 = 1, a2 = 2, ... , an = 2 * an − 1 + an - 2 (n > 2)。
+给出一个正整数k，要求Pell数列的第k项模上32767是多少。*/
+//#include <iostream>
+//
+//using namespace std;
+//
+//int getPell(int i);
+//
+//int main() {
+//    int n, k;
+//    cin >> n;
+//    int m[n];
+//    for (int i = 0; i < n; ++i) {
+//        cin >> k;
+//        m[i] = getPell(k) % 32767;
+//    }
+//    for (int j = 0; j <n ; ++j) {
+//        cout<<m[j];
+//    }
+//    return 0;
+//}
+//
+//int getPell(int i) {
+//    int out;
+//    if (i == 1 || i == 2) {
+//        out = i;
+//    } else {
+//        out = 2 * getPell(i - 1) + getPell(i - 2);
+//    }
+//    return out;
+//}
+
+
+//6.2 求最大公约数问题
+//#include <iostream>
+//
+//using namespace std;
+//
+//int main() {
+//    int a, b;
+//    int x, y, temp;
+//    cin >> a >> b;
+//    if (a > b) {
+//        x = a, y = b;
+//    } else {
+//        y = a, x = b;
+//    }
+//    while (x % y != 0) {
+//        temp = x % y;
+//        x = y;
+//        y = temp;
+//    }
+//    cout<<y;
+//};
+
+/*6.3写出函数中缺失的部分，使得函数返回值为一个整数,该整数的第i位和m的第i位相同，其他位和n相同。
+
+请使用【一行代码】补全bitManipulation1函数使得程序能达到上述的功能*/
+//#include <iostream>
+//using namespace std;
+//
+//int bitManipulation1(int n, int m, int i) {
+//// 在此处补充你的代码
+//    return n - (n & (1 << i)) + (m & (1 << i));
+//}
+//
+//int main() {
+//    int n, m, i, t;
+//    cin >> t;
+//    while (t--) {
+//        cin >> n >> m >> i;
+//        cout << bitManipulation1(n, m, i) << endl;
+//    }
+//    return 0;
+//}
+
+
+/*6.4写出函数中缺失的部分，使得函数返回值为一个整数,该整数的第i位是n的第i位取反，其余位和n相同
+
+请使用【一行代码】补全bitManipulation2函数使得程序能达到上述的功能*/
+//#include <iostream>
+//using namespace std;
+//
+//int bitManipulation2(int n, int i) {
+//// 在此处补充你的代码
+//    return n ^ (1 << i);
+//}
+//
+//int main() {
+//    int t, n, i;
+//    cin >> t;
+//    while (t--) {
+//        cin >> n >> i;
+//        cout << bitManipulation2(n, i) << endl;
+//    }
+//    return 0;
+//}
+
+/*6.5写出函数中缺失的部分，使得函数返回值为一个整数,该整数的左边i位是n的左边i位取反，其余位和n相同
+请使用【一行代码】补全bitManipulation3函数使得程序能达到上述的功能*/
+#include <iostream>
+using namespace std;
+
+int bitManipulation3(int n, int i) {
+// 在此处补充你的代码
+    return n ^ -1 << (32 - i);
+}
+
+int main() {
+    int t, n, i;
+    cin >> t;
+    while (t--) {
+        cin >> n >> i;
+        cout << bitManipulation3(n, i) << endl;
+    }
+    return 0;
+}
