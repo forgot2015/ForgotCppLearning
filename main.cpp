@@ -828,36 +828,25 @@ int main() {
 //6.1
 /*Pell数列a1, a2, a3, ...的定义是这样的，a1 = 1, a2 = 2, ... , an = 2 * an − 1 + an - 2 (n > 2)。
 给出一个正整数k，要求Pell数列的第k项模上32767是多少。*/
-//#include <iostream>
-//
-//using namespace std;
-//
-//int getPell(int i);
-//
-//int main() {
-//    int n, k;
-//    cin >> n;
-//    int m[n];
-//    for (int i = 0; i < n; ++i) {
-//        cin >> k;
-//        m[i] = getPell(k) % 32767;
-//    }
-//    for (int j = 0; j <n ; ++j) {
-//        cout<<m[j];
-//    }
-//    return 0;
-//}
-//
-//int getPell(int i) {
-//    int out;
-//    if (i == 1 || i == 2) {
-//        out = i;
-//    } else {
-//        out = 2 * getPell(i - 1) + getPell(i - 2);
-//    }
-//    return out;
-//}
-
+#include<stdio.h>
+const int M = 1000010;
+int a[M]={0};
+int main()
+{
+    int n;
+    a[1]=1;
+    a[2]=2;
+    for(int i=3; i<M; ++i)
+        a[i]=(2*a[i-1]+a[i-2])%32767;
+    scanf("%d",&n);
+    for(int i=0; i<n; ++i)
+    {
+        int k;
+        scanf("%d",&k);
+        printf("%d\n",a[k]);
+    }
+    return 0;
+}
 
 //6.2 求最大公约数问题
 //#include <iostream>
@@ -926,20 +915,20 @@ int main() {
 
 /*6.5写出函数中缺失的部分，使得函数返回值为一个整数,该整数的左边i位是n的左边i位取反，其余位和n相同
 请使用【一行代码】补全bitManipulation3函数使得程序能达到上述的功能*/
-#include <iostream>
-using namespace std;
-
-int bitManipulation3(int n, int i) {
-// 在此处补充你的代码
-    return n ^ -1 << (32 - i);
-}
-
-int main() {
-    int t, n, i;
-    cin >> t;
-    while (t--) {
-        cin >> n >> i;
-        cout << bitManipulation3(n, i) << endl;
-    }
-    return 0;
-}
+//#include <iostream>
+//using namespace std;
+//
+//int bitManipulation3(int n, int i) {
+//// 在此处补充你的代码
+//    return n ^ -1 << (32 - i);
+//}
+//
+//int main() {
+//    int t, n, i;
+//    cin >> t;
+//    while (t--) {
+//        cin >> n >> i;
+//        cout << bitManipulation3(n, i) << endl;
+//    }
+//    return 0;
+//}
