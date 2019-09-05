@@ -1,4 +1,4 @@
-"C:\Program Files (x86)\JetBrains\CLion 2017.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Projects_github\ForgotCppLearning
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/forgot/14_CLionProjects/ForgotCppLearning
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Projects_github/ForgotCppLearning/cmake-build-debug
+-- Build files have been written to: /Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug

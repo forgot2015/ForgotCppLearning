@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Projects_github/ForgotCppLearning/chapter1.cpp
-cstdio
+/Users/forgot/14_CLionProjects/ForgotCppLearning/demo.cpp
+iostream
 -
-chapter1.h
-D:/Projects_github/ForgotCppLearning/chapter1.h
-
-D:/Projects_github/ForgotCppLearning/chapter1.h
-
-D:/Projects_github/ForgotCppLearning/main.cpp
-stdio.h
+cstdlib
+-
+ctime
 -
 

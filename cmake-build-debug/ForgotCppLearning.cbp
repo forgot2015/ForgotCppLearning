@@ -8,90 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Projects_github/ForgotCppLearning/cmake-build-debug"/>
+				<Option working_dir="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Projects_github/ForgotCppLearning/cmake-build-debug"/>
+				<Option working_dir="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ForgotCppLearning">
-				<Option output="D:/Projects_github/ForgotCppLearning/cmake-build-debug/ForgotCppLearning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects_github/ForgotCppLearning/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 ForgotCppLearning"/>
-					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ForgotCppLearning/fast">
-				<Option output="D:/Projects_github/ForgotCppLearning/cmake-build-debug/ForgotCppLearning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects_github/ForgotCppLearning/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
-					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 ForgotCppLearning/fast"/>
-					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Projects_github/ForgotCppLearning/cmake-build-debug"/>
+				<Option working_dir="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects_github/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ForgotCppLearning">
+				<Option output="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/ForgotCppLearning" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 ForgotCppLearning"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ForgotCppLearning/fast">
+				<Option output="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/ForgotCppLearning" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 ForgotCppLearning/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Projects_github/ForgotCppLearning/chapter1.cpp">
+		<Unit filename="/Users/forgot/14_CLionProjects/ForgotCppLearning/chapter1.cpp">
 			<Option target="ForgotCppLearning"/>
 		</Unit>
-		<Unit filename="D:/Projects_github/ForgotCppLearning/chapter1.h">
+		<Unit filename="/Users/forgot/14_CLionProjects/ForgotCppLearning/chapter1.h">
 			<Option target="ForgotCppLearning"/>
 		</Unit>
-		<Unit filename="D:/Projects_github/ForgotCppLearning/main.cpp">
+		<Unit filename="/Users/forgot/14_CLionProjects/ForgotCppLearning/demo.cpp">
 			<Option target="ForgotCppLearning"/>
 		</Unit>
-		<Unit filename="D:/Projects_github/ForgotCppLearning/CMakeLists.txt">
+		<Unit filename="/Users/forgot/14_CLionProjects/ForgotCppLearning/main.cpp">
+			<Option target="ForgotCppLearning"/>
+		</Unit>
+		<Unit filename="/Users/forgot/14_CLionProjects/ForgotCppLearning/problemA/problem1001.cpp">
+			<Option target="ForgotCppLearning"/>
+		</Unit>
+		<Unit filename="/Users/forgot/14_CLionProjects/ForgotCppLearning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

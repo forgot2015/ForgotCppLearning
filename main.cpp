@@ -828,25 +828,25 @@ int main() {
 //6.1
 /*Pell数列a1, a2, a3, ...的定义是这样的，a1 = 1, a2 = 2, ... , an = 2 * an − 1 + an - 2 (n > 2)。
 给出一个正整数k，要求Pell数列的第k项模上32767是多少。*/
-#include<stdio.h>
-const int M = 1000010;
-int a[M]={0};
-int main()
-{
-    int n;
-    a[1]=1;
-    a[2]=2;
-    for(int i=3; i<M; ++i)
-        a[i]=(2*a[i-1]+a[i-2])%32767;
-    scanf("%d",&n);
-    for(int i=0; i<n; ++i)
-    {
-        int k;
-        scanf("%d",&k);
-        printf("%d\n",a[k]);
-    }
-    return 0;
-}
+//#include<stdio.h>
+//
+//const int M = 1000010;
+//int a[M] = {0};
+//
+//int main() {
+//    int n;
+//    a[1] = 1;
+//    a[2] = 2;
+//    for (int i = 3; i < M; ++i)
+//        a[i] = (2 * a[i - 1] + a[i - 2]) % 32767;
+//    scanf("%d", &n);
+//    for (int i = 0; i < n; ++i) {
+//        int k;
+//        scanf("%d", &k);
+//        printf("%d\n", a[k]);
+//    }
+//    return 0;
+//}
 
 //6.2 求最大公约数问题
 //#include <iostream>

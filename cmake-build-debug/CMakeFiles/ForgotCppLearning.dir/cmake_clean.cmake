@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ForgotCppLearning.dir/main.cpp.obj"
-  "CMakeFiles/ForgotCppLearning.dir/chapter1.cpp.obj"
+  "CMakeFiles/ForgotCppLearning.dir/main.cpp.o"
+  "CMakeFiles/ForgotCppLearning.dir/chapter1.cpp.o"
+  "CMakeFiles/ForgotCppLearning.dir/problemA/problem1001.cpp.o"
+  "CMakeFiles/ForgotCppLearning.dir/demo.cpp.o"
   "ForgotCppLearning.pdb"
-  "ForgotCppLearning.exe"
-  "ForgotCppLearning.exe.manifest"
-  "libForgotCppLearning.dll.a"
+  "ForgotCppLearning"
 )
 
 # Per-language clean rules from dependency scanning.

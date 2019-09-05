@@ -1,3 +1,3 @@
-D:/Projects_github/ForgotCppLearning/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Projects_github/ForgotCppLearning/cmake-build-debug/CMakeFiles/ForgotCppLearning.dir
-D:/Projects_github/ForgotCppLearning/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/forgot/14_CLionProjects/ForgotCppLearning/cmake-build-debug/CMakeFiles/ForgotCppLearning.dir
